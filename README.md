@@ -1,105 +1,72 @@
-# AI-TPRM Toolkit
+# AI Assurance Toolkit
 
-**Open-source AI-Aware Third-Party Risk Management Toolkit**
+**Open-source toolkit for assessing and governing third-party AI, from enterprise AI vendors to frontier model providers.**
 
-A practical, framework-aligned toolkit for organisations managing third-party and AI supply chain risk. Covers vendor assessment questionnaires, risk scoring models, governance checklists, and policy templates aligned with ISO/IEC 27001, ISO/IEC 42001, EU AI Act, NIS2, and DORA.
+*Formerly the AI-TPRM Toolkit.*
 
----
+## The problem
 
-## Who This Is For
+Organisations now depend on AI systems they did not build and cannot fully inspect. Traditional third-party risk tools were designed for software and services, not for models, evaluations, or frontier developers. This toolkit gives you structured questionnaires, scoring, and evidence guides to ask better questions and judge the answers.
+
+## Who this is for
 
 - **GRC and compliance professionals** building or improving TPRM programmes
 - **AI governance practitioners** assessing AI systems in their supply chain
-- **Energy sector operators** managing NIS2 Article 21 supply chain obligations
-- **Financial sector organisations** meeting DORA ICT third-party requirements
-- **Security teams** needing structured vendor assessment tooling
+- **Funders, policy teams and researchers** who need a structured way to judge frontier AI developers' assurance claims
+- **Sector operators** (energy, finance) meeting NIS2 and DORA supply-chain duties
 
----
+## What is inside
 
-## What Is Included
+| Folder | Purpose |
+|---|---|
+| `core/` | Risk tiering, scoring, TPRM policy, AI supply chain policy |
+| `questionnaires/` | Standard, AI, OT/ICS, financial, and **frontier model provider** questionnaires |
+| `checklists/` | Onboarding, offboarding, NIS2, EU AI Act, DORA, DPA review |
+| `frontier/` | **New.** Assurance guides for frontier AI developers: audits, evals, incident reporting |
+| `examples/` | **New.** A fully worked assessment (fictional vendor) |
+| `templates/` | Assessment report, risk register, remediation plan, management briefing |
+| `docs/` | How to use the toolkit and framework mapping |
 
-```
-ai-tprm-toolkit/
-├── README.md
-├── questionnaires/
-│   ├── standard_vendor_questionnaire.md        # General TPRM — all tiers
-│   ├── ai_vendor_questionnaire.md              # AI-specific — ISO 42001 aligned
-│   ├── ot_vendor_questionnaire.md              # OT/ICS vendor — IEC 62443 aligned
-│   └── financial_vendor_questionnaire.md       # DORA-aligned ICT third-party
-├── checklists/
-│   ├── vendor_onboarding_checklist.md          # Full onboarding workflow
-│   ├── nis2_article21_checklist.md             # NIS2 supply chain compliance
-│   ├── eu_ai_act_supplier_checklist.md         # EU AI Act Annex III supplier check
-│   ├── dora_ict_tprm_checklist.md              # DORA Article 28-44 checklist
-│   └── vendor_offboarding_checklist.md         # Secure offboarding procedure
-├── scoring/
-│   ├── vendor_risk_scoring_model.md            # RAG scoring methodology
-│   ├── ai_system_risk_calculator.md            # EU AI Act risk classification tool
-│   └── tprm_kpi_dashboard_template.md          # KPI definitions and targets
-├── governance/
-│   ├── tprm_policy_template.md                 # Complete TPRM policy
-│   ├── vendor_risk_tier_model.md               # Critical/High/Medium/Low model
-│   ├── ai_supply_chain_policy.md               # AI-specific supply chain policy
-│   └── dpa_review_checklist.md                 # GDPR Article 28 DPA review
-└── templates/
-    ├── vendor_assessment_report.md             # Assessment report template
-    ├── risk_register_template.md               # Vendor risk register
-    ├── remediation_plan_template.md            # Gap remediation tracker
-    └── management_briefing_template.md         # Executive dashboard template
-```
+## Quick start
 
----
+1. Classify the vendor with `core/risk-tier-model.md`.
+2. Pick the questionnaire: `questionnaires/` (use `frontier-model-provider.md` for general-purpose or frontier model developers).
+3. Score the answers with `core/scoring-model.md` (and the domain scoring in `frontier/` where relevant).
+4. Complete the checklist in `checklists/` before approving the vendor.
+5. Record findings with `templates/` and track ongoing risk with `core/kpi-dashboard-template.md`.
 
-## Framework Alignment
+See `examples/worked-assessment.md` for the whole flow end to end.
 
-| Framework | Coverage in this toolkit |
-|-----------|--------------------------|
-| ISO/IEC 27001:2022 | Annex A 5.19–5.22 supplier controls, Clause 6 risk assessment |
-| ISO/IEC 42001:2023 | Clause 4.5 AI supply chain obligations, Annex A.10 third-party AI |
-| EU AI Act (2024) | Annex III high-risk classification, Article 9 risk management |
-| NIS2 Directive (2022/2555) | Article 21(2) ten measures, Article 21(3) supply chain |
-| DORA (2022/2554) | Article 28–44 ICT third-party risk management |
-| GDPR (2016/679) | Article 28 Data Processing Agreements |
+## Framework alignment
+
+| Framework | Coverage |
+|---|---|
+| ISO/IEC 27001:2022 | Annex A 5.19 to 5.22 supplier controls |
+| ISO/IEC 42001:2023 | Annex A.10 third-party and customer relationships |
+| EU AI Act (2024/1689) | High-risk classification and Article 9; obligations for general-purpose AI models |
+| NIST AI RMF 1.0 | GOVERN, MAP, MEASURE, MANAGE |
+| NIS2 (2022/2555) | Article 21 supply chain measures |
+| DORA (2022/2554) | ICT third-party risk management |
+| GDPR | Article 28 data processing agreements |
 | IEC 62443 | OT/ICS vendor security levels |
-| NIST CSF 2.0 | GOVERN and IDENTIFY functions |
 
----
+Details: `docs/framework-mapping.md`.
 
-## How to Use
+## Status and limits
 
-1. **Start with the vendor risk tier model** (`governance/vendor_risk_tier_model.md`) to classify your vendors
-2. **Select the appropriate questionnaire** based on vendor type
-3. **Score responses** using the scoring model (`scoring/vendor_risk_scoring_model.md`)
-4. **Complete the onboarding checklist** before approving any vendor
-5. **Track ongoing risk** using the KPI dashboard template
+- Core materials are stable (v1). The `frontier/` module is **v0.1**: a working draft that needs practitioner review. Feedback is welcome.
+- This toolkit supports assessment; it does not replace independent audits, legal advice, or regulator guidance.
 
----
+## Related work
 
-## Licence
+- Thompson & Suomalainen (2025). *GAOR: Genetic Algorithm-Based Optimization for ML Robustness in Communication Networks.* Network, 5(1), 6.
+- Direct democracy paper: **[add title and link]**
 
-Creative Commons Attribution 4.0 International (CC BY 4.0)
+## Citing
 
-You are free to use, adapt, and redistribute this toolkit with attribution.
-
-**Attribution:** Aderonke Thompson — AI-TPRM Toolkit — github.com/aderonkethompsonphd/ai-tprm-toolkit
-
----
+See `CITATION.cff`. Licence: CC BY 4.0.
 
 ## Author
 
-**Aderonke Thompson, PhD** AI Governance, Risk and compliance 
-ISO 27001 Lead Implementer / Lead Auditor | ISO 42001 AI Management Systems 
-Former ERCIM Postdoctoral Fellow, VTT Technical Research Centre of Finland (2022–2024)
-
-[LinkedIn](https://linkedin.com/in/aderonke-thompson)
-
----
-
-## Contributing
-
-Contributions welcome. Please open an issue or pull request.
-Focus areas: additional sector questionnaires, translations, automation scripts.
-
----
-
-*This toolkit is provided for educational and professional use. It does not constitute legal advice. Always consult qualified legal and compliance professionals for your specific regulatory obligations.*
+**Aderonke Thompson, PhD**, AI governance, risk and compliance.
+ISO/IEC 42001 and ISO/IEC 27001 Lead Implementer. Former ERCIM Postdoctoral Fellow, VTT Technical Research Centre of Finland (2022 to 2024).

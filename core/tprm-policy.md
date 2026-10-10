@@ -21,7 +21,7 @@ This policy applies to all third-party relationships involving:
 
 ## 3. Risk Tier Classification
 
-All vendors are classified as Critical, High, Medium, or Low based on their potential impact on [Organisation]'s operations and data. See: `governance/vendor_risk_tier_model.md`.
+All vendors are classified as Critical, High, Medium, or Low based on their potential impact on [Organisation]'s operations and data. See: `core/risk-tier-model.md`.
 
 ---
 

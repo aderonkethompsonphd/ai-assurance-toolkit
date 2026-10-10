@@ -35,7 +35,7 @@ All AI vendors are subject to the standard TPRM tier classification PLUS:
 
 ## 4. AI Vendor Assessment Requirements
 
-All AI vendors must complete both the standard vendor questionnaire AND the AI-specific vendor questionnaire (see `questionnaires/ai_vendor_questionnaire.md`).
+All AI vendors must complete both the standard vendor questionnaire AND the AI-specific vendor questionnaire (see `questionnaires/ai-vendor-questionnaire.md`).
 
 **Additional AI-specific requirements:**
 - AIBOM / model card provided or confirmed available

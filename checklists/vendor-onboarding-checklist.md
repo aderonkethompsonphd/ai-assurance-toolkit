@@ -25,7 +25,7 @@
 - [ ] SLA chasing reminder set (3 days before overdue)
 - [ ] Questionnaire responses received
 - [ ] Responses reviewed by Compliance
-- [ ] Risk score calculated (see: scoring/vendor_risk_scoring_model.md)
+- [ ] Risk score calculated (see: core/scoring-model.md)
 - [ ] Red findings documented and remediation plan requested
 - [ ] Risk score below escalation threshold? Yes: continue | No: escalate to senior reviewer
 
@@ -37,7 +37,7 @@
 
 - [ ] Does vendor process personal data? Yes / No
   - [ ] If Yes: DPA required and sent to Legal
-  - [ ] DPA reviewed against GDPR Article 28 requirements (see: governance/dpa_review_checklist.md)
+  - [ ] DPA reviewed against GDPR Article 28 requirements (see: checklists/dpa-review-checklist.md)
   - [ ] DPA signed and uploaded to vendor record
 - [ ] Security requirements included in supplier agreement?
 - [ ] Sub-processor notification clause included?

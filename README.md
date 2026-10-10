@@ -6,7 +6,7 @@
 
 ## The problem
 
-Organisations now depend on AI systems they did not build and cannot fully inspect. Traditional third-party risk tools were designed for software and services, not for models, evaluations, or frontier developers. This toolkit gives you structured questionnaires, scoring, and evidence guides to ask better questions and judge the answers.
+Organisations now depend on AI systems they did not build and cannot fully inspect. Traditional third-party risk tools were designed for software and services, not for models, evaluations, or frontier developers. This toolkit gives you structured questionnaires, scoring, and evidence guides to ask relevant questions and judge the answers.
 
 ## Who this is for
 

@@ -59,8 +59,9 @@ Details: `docs/framework-mapping.md`.
 
 ## Related work
 
-- Thompson & Suomalainen (2025). *GAOR: Genetic Algorithm-Based Optimization for ML Robustness in Communication Networks.* Network, 5(1), 6.
-- Direct democracy paper: **[add title and link]**
+- Thompson, A. & Suomalainen, J. (2025). *GAOR: Genetic Algorithm-Based Optimization for ML Robustness in Communication Networks.* Network, 5(1), 6. https://doi.org/10.3390/network5010006
+- Thompson, A., Papakonstantinou, N., & Sharma, D. (2023). *Direct Democracy Architecture using Blockchain Technology.* IARIA Congress 2023. https://www.thinkmind.org/library/IARIA_CONGRESS/IARIA_Congress_2023/iaria_congress_2023_1_340_50219.html
+- Sharma, D., Thompson, A., & Känsälä, K. (2023). *EnergyDAO: Decentralised Autonomous Organisation for energy community governance.* VTT White Paper. https://cris.vtt.fi/en/publications/energydao-decentralised-autonomous-organisation-for-energy-commun/
 
 ## Citing
 
